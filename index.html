@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendaftaran Siswa Baru | SDK Lengko Ajang 2025/2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pendaftaran Siswa Baru</h1>
+    <h2>SDK Lengko Ajang Tahun Pelajaran 2025/2026</h2>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+      
+      <h3>Data Calon Siswa</h3>
+      <label>Nama Lengkap:</label>
+      <input type="text" name="nama_lengkap" required />
+
+      <label>Jenis Kelamin:</label>
+      <select name="jenis_kelamin" required>
+        <option value="">--Pilih--</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <label>NIK:</label>
+      <input type="text" name="nik" required />
+
+      <label>No. KK:</label>
+      <input type="text" name="no_kk" required />
+
+      <label>Tempat Lahir:</label>
+      <input type="text" name="tempat_lahir" required />
+      
+      <label>Tanggal Lahir:</label>
+      <input type="date" name="tanggal_lahir" required />
+
+      <label>No. Reg Akta Kelahiran:</label>
+      <input type="text" name="no_akta" required />
+
+      <label>Agama / Kepercayaan:</label>
+      <input type="text" name="agama" required />
+
+      <label>Kewarganegaraan:</label>
+      <input type="text" name="kewarganegaraan" required />
+
+      <label>Alamat:</label>
+      <textarea name="alamat" required></textarea>
+
+      <label>RT:</label>
+      <input type="text" name="rt" required />
+      <label>RW:</label>
+      <input type="text" name="rw" required />
+
+      <label>Nama Dusun:</label>
+      <input type="text" name="dusun" required />
+
+      <label>Desa/Kelurahan:</label>
+      <input type="text" name="desa" required />
+
+      <label>Tempat Tinggal:</label>
+      <select name="tempat_tinggal" required>
+        <option value="">--Pilih--</option>
+        <option value="Orang Tua">Bersama Orang Tua</option>
+        <option value="Wali">Wali</option>
+        <option value="Kos">Kos</option>
+      </select>
+
+      <label>Anak ke-berapa:</label>
+      <input type="number" name="anak_ke" required />
+
+      <label>Jumlah Saudara Kandung:</label>
+      <input type="number" name="jumlah_saudara" required />
+
+      <label>Penerima KPS/PKH:</label>
+      <select name="penerima_kps">
+        <option value="Tidak">Tidak</option>
+        <option value="Ya">Ya</option>
+      </select>
+
+      <h3>Data Ayah Kandung</h3>
+      <label>Nama Ayah:</label>
+      <input type="text" name="nama_ayah" required />
+      <label>NIK Ayah:</label>
+      <input type="text" name="nik_ayah" required />
+      <label>Tahun Lahir Ayah:</label>
+      <input type="text" name="lahir_ayah" required />
+      <label>Pendidikan Ayah:</label>
+      <input type="text" name="pendidikan_ayah" required />
+      <label>Pekerjaan Ayah:</label>
+      <input type="text" name="pekerjaan_ayah" required />
+      <label>Penghasilan Ayah:</label>
+      <input type="text" name="penghasilan_ayah" required />
+
+      <h3>Data Ibu Kandung</h3>
+      <label>Nama Ibu:</label>
+      <input type="text" name="nama_ibu" required />
+      <label>NIK Ibu:</label>
+      <input type="text" name="nik_ibu" required />
+      <label>Tahun Lahir Ibu:</label>
+      <input type="text" name="lahir_ibu" required />
+      <label>Pendidikan Ibu:</label>
+      <input type="text" name="pendidikan_ibu" required />
+      <label>Pekerjaan Ibu:</label>
+      <input type="text" name="pekerjaan_ibu" required />
+      <label>Penghasilan Ibu:</label>
+      <input type="text" name="penghasilan_ibu" required />
+
+      <label>No. Telepon/HP Orang Tua:</label>
+      <input type="text" name="no_hp" required />
+
+      <h3>Upload Dokumen</h3>
+      <label>Kartu Keluarga (KK):</label>
+      <input type="file" name="upload_kk" accept=".pdf,.jpg,.jpeg,.png" required />
+
+      <label>Akta Kelahiran:</label>
+      <input type="file" name="upload_akta" accept=".pdf,.jpg,.jpeg,.png" required />
+
+      <label>Sertifikat PAUD/TK:</label>
+      <input type="file" name="upload_ktp" accept=".pdf,.jpg,.jpeg,.png" required />
+
+      <br><br>
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+  </div>
+</body>
+</html>
